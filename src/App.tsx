@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import CharacterGallery from "./Component/CharacterGallery";
 import axios from "axios";
+import CharacterCard from './Component/CharacterCard';
 
 export default function App() {
 
@@ -19,8 +20,7 @@ export default function App() {
                 console.error(error)
             })
     } , [])
-
-
+    
     return (
         <div>
             <h1> Rick & Morty Character Suchmaschine </h1>
